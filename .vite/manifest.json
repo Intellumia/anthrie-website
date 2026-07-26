@@ -11,7 +11,7 @@
     "name": "rolldown-runtime"
   },
   "app/page.tsx": {
-    "file": "assets/page-3G6z2SlX.js",
+    "file": "assets/page-BMQJkyfh.js",
     "name": "page",
     "src": "app/page.tsx",
     "isDynamicEntry": true,
@@ -33,7 +33,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-CdibST0L.js",
+    "file": "assets/layout-segment-context-D8_30jCr.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -44,7 +44,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/link.js": {
-    "file": "assets/link-C4HNmH1W.js",
+    "file": "assets/link-BQfVoOEV.js",
     "name": "link",
     "src": "node_modules/vinext/dist/shims/link.js",
     "isDynamicEntry": true,
@@ -58,7 +58,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/router.js": {
-    "file": "assets/router-iNHCGcPC.js",
+    "file": "assets/router-mD_F705X.js",
     "name": "router",
     "src": "node_modules/vinext/dist/shims/router.js",
     "isDynamicEntry": true,
@@ -73,7 +73,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-abRpHBco.js",
+    "file": "assets/index-CBqr9U_C.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
