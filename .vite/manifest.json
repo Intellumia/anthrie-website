@@ -1,25 +1,4 @@
 {
-  "../../../../../../../../Users/sundeep/Dev/Anthrie/site/node_modules/vinext/dist/shims/image.js": {
-    "file": "assets/image-CFgqE4Ha.js",
-    "name": "image",
-    "src": "../../../../../../../../Users/sundeep/Dev/Anthrie/site/node_modules/vinext/dist/shims/image.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_rolldown-runtime-S-ySWqyJ.js",
-      "_framework-CXnKph_e.js"
-    ]
-  },
-  "../../../../../../../../Users/sundeep/Dev/Anthrie/site/node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-CmA_qO-e.js",
-    "name": "layout-segment-context",
-    "src": "../../../../../../../../Users/sundeep/Dev/Anthrie/site/node_modules/vinext/dist/shims/layout-segment-context.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_rolldown-runtime-S-ySWqyJ.js",
-      "virtual:vinext-app-browser-entry",
-      "_framework-CXnKph_e.js"
-    ]
-  },
   "_framework-CXnKph_e.js": {
     "file": "assets/framework-CXnKph_e.js",
     "name": "framework",
@@ -32,7 +11,7 @@
     "name": "rolldown-runtime"
   },
   "app/mobile-nav.tsx": {
-    "file": "assets/mobile-nav-w1wnkTfy.js",
+    "file": "assets/mobile-nav-VPPN0t0M.js",
     "name": "mobile-nav",
     "src": "app/mobile-nav.tsx",
     "isDynamicEntry": true,
@@ -41,8 +20,29 @@
       "_framework-CXnKph_e.js"
     ]
   },
+  "node_modules/vinext/dist/shims/image.js": {
+    "file": "assets/image-Ccy9DLiw.js",
+    "name": "image",
+    "src": "node_modules/vinext/dist/shims/image.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_framework-CXnKph_e.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "assets/layout-segment-context-l21fmrzP.js",
+    "name": "layout-segment-context",
+    "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-CXnKph_e.js"
+    ]
+  },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-sLCHgmy6.js",
+    "file": "assets/index-ByCJQ3eP.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -51,10 +51,10 @@
       "_framework-CXnKph_e.js"
     ],
     "dynamicImports": [
-      "app/mobile-nav.tsx",
+      "node_modules/vinext/dist/shims/layout-segment-context.js",
       "virtual:vinext-app-browser-entry",
-      "../../../../../../../../Users/sundeep/Dev/Anthrie/site/node_modules/vinext/dist/shims/image.js",
-      "../../../../../../../../Users/sundeep/Dev/Anthrie/site/node_modules/vinext/dist/shims/layout-segment-context.js"
+      "app/mobile-nav.tsx",
+      "node_modules/vinext/dist/shims/image.js"
     ]
   }
 }
