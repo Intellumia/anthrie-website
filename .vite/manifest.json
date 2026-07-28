@@ -11,7 +11,7 @@
     "name": "rolldown-runtime"
   },
   "app/contact-sheet.tsx": {
-    "file": "assets/contact-sheet-BQJa0p38.js",
+    "file": "assets/contact-sheet-DpwpcGGL.js",
     "name": "contact-sheet",
     "src": "app/contact-sheet.tsx",
     "isDynamicEntry": true,
@@ -41,7 +41,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-D1UFr6WQ.js",
+    "file": "assets/layout-segment-context-8w_DDF-g.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -52,7 +52,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-CKisIk9j.js",
+    "file": "assets/index-BCs8ZiQU.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
