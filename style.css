@@ -1,0 +1,60 @@
+:root {
+  /* Anthrie, endorsed by Intellumia: Intellumia's type and base (Instrument Serif and Sans, #f4f4ef on #101010),
+     Anthrie's own calm accent — Intellumia's deep green, never its acid green or purple. */
+  --bg: #f4f4ef;
+  --text: #101010;
+  --muted: #5e5e5e;
+  --line: #d9d9d2;
+  --accent: #365e00;
+  --card: #fbfbf7;
+  --measure: 40rem;
+  --serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --sans: "Instrument Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101010;
+    --text: #f4f4ef;
+    --muted: #a3a39c;
+    --line: #2a2a27;
+    --accent: #a9cf6b;
+    --card: #181816;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101010;
+  --text: #f4f4ef;
+  --muted: #a3a39c;
+  --line: #2a2a27;
+  --accent: #a9cf6b;
+  --card: #181816;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 var(--sans);
+}
+.wrap { max-width: var(--measure); margin: 0 auto; padding: 3rem 1rem 4rem; }
+header.site { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3rem; }
+header.site a.name { font-family: var(--serif); font-size: 1.5rem; color: var(--text); text-decoration: none; }
+nav a { color: var(--muted); text-decoration: none; margin-left: 1.25rem; font-size: 0.95rem; }
+nav a:hover, a:hover { color: var(--accent); }
+a { color: var(--accent); }
+h1 { font-family: var(--serif); font-size: clamp(2.4rem, 7vw, 3.4rem); line-height: 1.08; letter-spacing: -0.01em; margin: 0 0 1rem; font-weight: 400; }
+h2 { font-family: var(--serif); font-size: 1.6rem; margin: 2.5rem 0 0.6rem; font-weight: 400; }
+h3 { font-size: 1.02rem; margin: 1.5rem 0 0.4rem; }
+p, li { color: var(--text); }
+.lede { font-size: 1.2rem; color: var(--muted); margin-bottom: 2.5rem; }
+.muted { color: var(--muted); }
+ul { padding-left: 1.2rem; }
+li { margin: 0.35rem 0; }
+.pillars { display: grid; gap: 0.75rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+.pillars li { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 0.9rem 1rem; margin: 0; }
+.pillars b { display: block; margin-bottom: 0.15rem; }
+.draft { border: 1px dashed var(--line); border-radius: 10px; padding: 0.75rem 1rem; color: var(--muted); font-size: 0.92rem; margin-bottom: 2rem; }
+footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+footer a { color: var(--muted); margin-right: 1rem; }
+@media (min-width: 640px) { .pillars { grid-template-columns: 1fr 1fr; } }
