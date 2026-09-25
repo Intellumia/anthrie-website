@@ -160,3 +160,20 @@ section.s:not(.alt) .card { background: var(--card); }
   .family .watch { width: 15%; }
   .daygrid .pics { position: static; }
 }
+/* the early-access form */
+.request { display: grid; gap: 1rem; max-width: 40rem; margin-top: 1.5rem; }
+.request .row2 { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+.request label { display: grid; gap: 0.35rem; font-weight: 600; font-size: 0.95rem; }
+.request input, .request select, .request textarea { font: inherit; font-weight: 400; color: var(--text); background: var(--card);
+  border: 1px solid var(--line); border-radius: 10px; padding: 0.65rem 0.8rem; }
+.request input:focus, .request select:focus, .request textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.request fieldset { border: 1px solid var(--line); border-radius: 10px; padding: 0.6rem 0.9rem 0.8rem; display: flex; gap: 1.2rem; flex-wrap: wrap; }
+.request legend { font-weight: 600; font-size: 0.95rem; padding: 0 0.3rem; }
+.request label.check { display: flex; align-items: center; gap: 0.4rem; font-weight: 400; }
+.request .opt { color: var(--muted); font-weight: 400; }
+.request .hint { color: var(--muted); font-weight: 400; font-size: 0.9rem; }
+.request .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.request button { justify-self: start; cursor: pointer; }
+.request button:disabled { opacity: 0.6; cursor: default; }
+.request .status { color: var(--muted); margin: 0; }
+@media (min-width: 640px) { .request .row2 { grid-template-columns: 1fr 1fr; } }

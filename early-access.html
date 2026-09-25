@@ -13,22 +13,75 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body class="site">
   <header class="bar"><div class="c">
     <a class="name" href="/">Anthrie</a>
     <nav><a href="/#how">How it works</a><a href="/#features">What it does</a><a href="/#day">A day</a><a href="trust.html">Privacy</a><a href="early-access.html">Early access</a></nav>
-    <a class="btn small" href="mailto:hello@anthrie.com?subject=Early%20access%20to%20Anthrie&body=Hi%2C%0A%0AI%27d%20like%20early%20access%20to%20Anthrie.%0A%0A1.%20My%20Mac%20%28model%20and%20year%2C%20e.g.%20MacBook%20Air%20M2%2C%202023%29%3A%0A2.%20Where%20I%20read%20my%20mail%20%28Apple%20Mail%2C%20Gmail%20in%20a%20browser%2C%20Outlook%2C%20...%29%3A%0A3.%20I%20also%20use%20%28iPhone%20/%20Apple%20Watch%20/%20iPad%29%3A%0A%0AThanks%2C%0A">Request early access</a>
+    <a class="btn small" href="early-access.html#request">Request early access</a>
   </div></header>
+
 
 
   <section class="page-head"><div class="c prose">
     <p class="eyebrow">Early access · for Mac</p>
     <h1>Be one of the first to get your evenings back.</h1>
     <p class="lead">We're inviting a small number of people to use Anthrie while we build it with them. It's free, it only reads, and everything stays on your Mac.</p>
-    <p><a class="btn" href="mailto:hello@anthrie.com?subject=Early%20access%20to%20Anthrie&body=Hi%2C%0A%0AI%27d%20like%20early%20access%20to%20Anthrie.%0A%0A1.%20My%20Mac%20%28model%20and%20year%2C%20e.g.%20MacBook%20Air%20M2%2C%202023%29%3A%0A2.%20Where%20I%20read%20my%20mail%20%28Apple%20Mail%2C%20Gmail%20in%20a%20browser%2C%20Outlook%2C%20...%29%3A%0A3.%20I%20also%20use%20%28iPhone%20/%20Apple%20Watch%20/%20iPad%29%3A%0A%0AThanks%2C%0A">Request early access</a></p>
-    <p class="fine">You'll get a short email back. We read every one, and invite people a few at a time.</p>
+    <form class="request" id="request" autocomplete="on">
+      <div class="row2">
+        <label>Your name<input name="name" required maxlength="120" autocomplete="name"></label>
+        <label>Email<input name="email" type="email" required maxlength="254" autocomplete="email"></label>
+      </div>
+      <div class="row2">
+        <label>Your Mac
+          <select name="mac" required>
+            <option value="">Choose…</option>
+            <option>MacBook Air (M1 or later)</option><option>MacBook Pro (M1 or later)</option><option>iMac (M1 or later)</option>
+            <option>Mac mini (M1 or later)</option><option>Mac Studio or Mac Pro (M1 or later)</option><option>An Intel Mac</option><option>No Mac yet</option>
+          </select></label>
+        <label>Where you read your mail
+          <select name="mail" required>
+            <option value="">Choose…</option>
+            <option>Apple Mail</option><option>Gmail in a browser</option><option>Outlook</option><option>Another app</option>
+          </select></label>
+      </div>
+      <fieldset><legend>You also use</legend>
+        <label class="check"><input type="checkbox" name="devices" value="iPhone"> iPhone</label>
+        <label class="check"><input type="checkbox" name="devices" value="Apple Watch"> Apple Watch</label>
+        <label class="check"><input type="checkbox" name="devices" value="iPad"> iPad</label>
+      </fieldset>
+      <label>Why do you want Anthrie?
+        <span class="hint">What's slipping through the cracks or eating your time right now, and how would you want Anthrie to help? A real example from the last week helps us most.</span>
+        <textarea name="plate" rows="4" maxlength="1000" required placeholder="e.g. “I missed my daughter's school form deadline last week — it was buried under 200 emails. I'd want Anthrie to catch things like that and remind me in time.”"></textarea></label>
+      <label>Anything else you'd like us to know <span class="opt">(optional)</span><textarea name="note" rows="2" maxlength="1000"></textarea></label>
+      <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+      <button class="btn" type="submit">Request early access</button>
+      <p class="fine">We keep only what you type here, to invite you — nothing else, and no tracking. See our <a href="privacy.html">privacy policy</a>.</p>
+      <p class="status" role="status" aria-live="polite"></p>
+    </form>
+    <p class="fine">Rather write? <a href="mailto:hello@anthrie.com?subject=Early%20access%20to%20Anthrie&body=Hi%2C%0A%0AI%27d%20like%20early%20access%20to%20Anthrie.%0A%0A1.%20My%20Mac%20%28model%20and%20year%2C%20e.g.%20MacBook%20Air%20M2%2C%202023%29%3A%0A2.%20Where%20I%20read%20my%20mail%20%28Apple%20Mail%2C%20Gmail%20in%20a%20browser%2C%20Outlook%2C%20...%29%3A%0A3.%20I%20also%20use%20%28iPhone%20/%20Apple%20Watch%20/%20iPad%29%3A%0A%0AThanks%2C%0A">hello@anthrie.com</a> — tell us which Mac you have and where you read your mail.</p>
+    <script>
+      (function () {
+        var form = document.getElementById('request');
+        var status = form.querySelector('.status');
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var f = new FormData(form);
+          var body = { name: f.get('name'), email: f.get('email'), mac: f.get('mac'), mail: f.get('mail'),
+                       devices: f.getAll('devices').join(', '), plate: f.get('plate'), note: f.get('note'), website: f.get('website') };
+          var button = form.querySelector('button');
+          button.disabled = true; status.textContent = 'Sending…';
+          fetch('https://waitlist-2qqtvw52hq-as.a.run.app', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+            .then(function (r) { return r.json().then(function (j) { return { ok: r.ok && j.ok, j: j }; }); })
+            .then(function (res) {
+              if (res.ok) { form.innerHTML = '<h3>Thank you — you’re on the list.</h3><p class="lead">We invite a few people at a time and read every request. We’ll write to you at ' + body.email.replace(/</g, '') + '.</p>'; }
+              else { button.disabled = false; status.textContent = (res.j && res.j.error) || 'That didn’t go through. Please try again, or write to hello@anthrie.com.'; }
+            })
+            .catch(function () { button.disabled = false; status.textContent = 'That didn’t go through. Please try again, or write to hello@anthrie.com.'; });
+        });
+      })();
+    </script>
   </div></section>
 
   <section class="s alt"><div class="c faq">
