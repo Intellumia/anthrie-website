@@ -3,164 +3,292 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Anthrie — your digital life, run alongside you</title>
-  <meta name="description" content="Anthrie reads what's already on your Mac — mail, messages, calendar, files — and brings you only what needs you. Early access for Mac.">
-  <meta property="og:title" content="Anthrie — your digital life, run alongside you">
-  <meta property="og:description" content="Anthrie reads what's already on your Mac — mail, messages, calendar, files — and brings you only what needs you. Early access for Mac.">
+  <title>Anthrie · A chief of staff for every human</title>
+  <meta name="description" content="Anthrie knows your whole life, keeps every thread moving and brings you only what needs you, by voice. Trusted like your lawyer, loyal only to you. Early access on Mac.">
+  <meta property="og:title" content="Anthrie · A chief of staff for every human">
+  <meta property="og:description" content="Anthrie knows your whole life, keeps every thread moving and brings you only what needs you, by voice. Trusted like your lawyer, loyal only to you. Early access on Mac.">
   <meta property="og:image" content="https://anthrie.com/img/og.png">
   <meta property="og:url" content="https://anthrie.com/">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="icon" href="img/brand/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="img/brand/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/brand/apple-touch-icon-180.png">
+  <link rel="preload" href="fonts/Figtree-Latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css?v=11">
 </head>
-<body class="site">
+<body class="site home">
   <header class="bar"><div class="c">
-    <a class="name" href="/">Anthrie</a>
-    <nav><a href="/#how">How it works</a><a href="/#features">What it does</a><a href="/#day">A day</a><a href="trust.html">Privacy</a><a href="early-access.html">Early access</a></nav>
+    <a class="name" href="/" aria-label="Anthrie, by Intellumia"><svg class="lockup" viewBox="0 0 494.02 129.6" aria-hidden="true" focusable="false"><path class="lockup-mark" d="M0 8.69 L33.75 8.69 L39.99 19.49 L89.61 19.49 L95.85 8.69 L129.6 8.69 L64.8 120.91ZM50.11 37.04 L64.8 62.45 L79.49 37.04Z"/><path fill="currentColor" d="M161.6 100.8 190.33 28.8H203.01L231.74 100.8H219.09L212.06 83.12H181.28L174.25 100.8ZM185.28 72.51H208.05L196.69 43.77ZM236.93 100.8V49.37H247.73L248.21 56.64Q250.74 52.51 254.69 50.33Q258.65 48.14 263.79 48.14Q269.88 48.14 274.26 50.6Q278.64 53.06 281 58.26Q283.36 63.46 283.3 71.79V100.8H271.82V74.47Q271.82 68.32 270.39 64.98Q268.96 61.64 266.44 60.29Q263.92 58.94 260.62 58.89Q254.78 58.81 251.59 62.72Q248.41 66.64 248.41 73.97V100.8ZM313.36 102.03Q305.2 102.03 300.92 97.95Q296.64 93.86 296.64 86.31V59.23H288.11V49.37H296.64V33.33H308.12V49.37H322V59.23H308.12V84.14Q308.12 87.72 309.83 89.57Q311.53 91.42 314.77 91.42Q315.83 91.42 317.03 91Q318.24 90.57 319.84 89.47L324 98.27Q321.4 100.09 318.71 101.06Q316.02 102.03 313.36 102.03ZM331.34 100.8V28.8H342.81V56.36Q345.39 52.34 349.29 50.24Q353.2 48.14 358.19 48.14Q364.29 48.14 368.67 50.6Q373.05 53.06 375.41 58.26Q377.76 63.46 377.71 71.79V100.8H366.23V74.47Q366.23 68.32 364.8 64.98Q363.37 61.64 360.85 60.29Q358.33 58.94 355.03 58.89Q349.19 58.81 346 62.72Q342.81 66.64 342.81 73.97V100.8ZM387.3 100.8V49.37H398.78V58.69Q401.9 53.85 406.81 51.51Q411.73 49.17 416.99 49.17V60.17Q412.33 60.17 408.16 61.46Q404 62.74 401.39 65.64Q398.78 68.53 398.78 73.28V100.8ZM423.26 100.8V49.37H434.74V100.8ZM429.06 39.63Q426.35 39.63 424.32 37.6Q422.29 35.57 422.29 32.86Q422.29 30.05 424.32 28.07Q426.35 26.09 429.06 26.09Q431.87 26.09 433.85 28.07Q435.83 30.05 435.83 32.86Q435.83 35.57 433.85 37.6Q431.87 39.63 429.06 39.63ZM469.2 102.03Q461.64 102.03 455.82 98.59Q450 95.14 446.69 89.07Q443.38 83.01 443.38 75.09Q443.38 67.17 446.75 61.1Q450.12 55.03 456.02 51.58Q461.92 48.14 469.57 48.14Q476.5 48.14 482.03 51.69Q487.57 55.23 490.8 61.9Q494.02 68.56 494.02 77.87H455.27Q455.78 84.32 460.06 88.03Q464.33 91.73 470.23 91.73Q474.94 91.73 478.04 89.61Q481.13 87.49 482.84 84.12L492.99 88.41Q490.89 92.59 487.53 95.66Q484.17 98.74 479.59 100.39Q475 102.03 469.2 102.03ZM455.96 69.04H481.59Q481.28 65.36 479.44 62.92Q477.61 60.49 474.92 59.24Q472.23 58 469.27 58Q466.41 58 463.47 59.21Q460.53 60.41 458.45 62.86Q456.37 65.31 455.96 69.04Z"/></svg><span class="by">by Intellumia</span></a>
+    <nav aria-label="Main"><a href="#shift">The idea</a><a href="#product">On your Mac</a><a href="#day">A day</a><a href="#trust">Trust</a><a href="early-access.html">Early access</a></nav>
     <a class="btn small" href="early-access.html#request">Request early access</a>
   </div></header>
 
-  <section class="hero"><div class="c">
-    <p class="eyebrow">Early access · for Mac</p>
-    <h1>Your digital life, run alongside you.</h1>
-    <p class="lead">Anthrie reads what's already on your Mac — mail, messages, calendar, notes and files — keeps track of every promise, and brings you only what needs you. Everything stays on your Mac.</p>
-    <div class="actions"><a class="btn" href="early-access.html#request">Request early access</a><a class="btn ghost" href="#how">See how it works</a></div>
-    <p class="note">Free in early access · Mac with Apple silicon · iPhone, Watch and iPad to follow</p>
-    <div class="family">
-      <img class="ipad" src="img/17-ipad-evening-consent.png" alt="Anthrie on iPad" loading="lazy">
-      <img class="mac" src="img/15-mac-desk-agreement.png" alt="Anthrie on Mac: an agreement compared with the draft you agreed" loading="lazy">
-      <img class="phone" src="img/02-brief-desk.png" alt="Anthrie on iPhone: the morning brief" loading="lazy">
-      <img class="watch" src="img/08-watch-quick-one.png" alt="Anthrie on Apple Watch: a quick yes or no" loading="lazy">
+  <main>
+  <!-- ASSET SLOTS (the creative team's art and film, "felt, not seen"). Each is marked data-slot. Until an asset
+       arrives, the slot is type on its field: never a stock photograph.
+       hero-backdrop  .slot-hero: set style="--art: url(img/art/hero.webp)" on the section (and a dark one with --art-dark)
+       mood-image     .slot-mood: the same, full width, mid-page
+       film           .slot-film: a <video> with captions, see the comment inside
+       closing-image  .slot-close: the same, full width, at the close
+       founder-portrait: the <figure class="portrait"> in the founder note (his photograph, now in place)
+       hear-it        the hero's "Hear it" button: set data-src to the audio file and it shows itself -->
+
+  <!-- 1. Hero: the headline, then a spoken exchange, line by line -->
+  <section class="hero slot slot-hero" data-slot="hero-backdrop"><div class="c">
+    <p class="eyebrow">Early access · Mac</p>
+    <h1 class="vision">A chief of staff<br> for every human.</h1>
+    <div class="hero-grid">
+      <p class="promise">It knows your whole life.<br> It keeps every thread moving.<br> It brings you only what needs you.</p>
+      <div class="hero-copy">
+        <p>The people who run countries and companies have always had one: someone who knows the people, the promises and the paperwork of their lives, deals with the small things, and lets only the critical through. Anthrie is that someone, for you.</p>
+        <div class="actions"><a class="btn" href="early-access.html#request">Request early access <span aria-hidden="true">↗</span></a><a class="go" href="#day">See a day with Anthrie</a></div>
+      </div>
     </div>
+    <figure class="exchange">
+      <div class="presence" aria-hidden="true"><span class="ring"></span><span class="dot"></span></div>
+      <div class="lines">
+        <p class="line you"><span class="who">You, at your desk</span>What did Rahul say about the pilot?</p>
+        <p class="line it"><svg class="lead-mark" viewBox="0 0 48 48" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M0 3.22 H12.5 L14.81 7.22 H33.19 L35.5 3.22 H48 L24 44.78ZM18.56 13.72 L24 23.13 L29.44 13.72Z"/></svg><span class="sr">Anthrie: </span>The pilot can start on the fifth, if you confirm today.</p>
+        <p class="line src">From Rahul’s mail, Tuesday.</p>
+      </div>
+      <!-- hear-it slot: set data-src="audio/talk-pilot.m4a" when the real recording exists; the button then shows. -->
+      <button class="listen" type="button" hidden data-src=""><span class="play" aria-hidden="true"></span>Hear it</button>
+      <figcaption class="cap">Talk, on your Mac <span class="chip" data-status-of="talk"></span> It hears you only when you talk to it, and nothing leaves your Mac.</figcaption>
+    </figure>
   </div></section>
 
-  <section class="s alt"><div class="c">
-    <p class="eyebrow">The problem</p>
-    <h2>You're the only thing connecting dozens of apps.</h2>
-    <p class="lead">Work mail and personal mail, WhatsApp and Messages, the school portal, the bank, the airline. Each wants your attention; none sees the whole of your life. So things slip.</p>
-    <div class="cards three">
-      <div class="card"><h3>Promises slip</h3><p>The go-ahead you meant to send on Tuesday. Said in a meeting, forgotten by Friday.</p></div>
-      <div class="card"><h3>Hours go to sorting</h3><p>Reading, filing and chasing — at 11:48 pm, instead of living.</p></div>
-      <div class="card"><h3>The important gets buried</h3><p>Your daughter's school form, due yesterday, under forty newsletters.</p></div>
+  <!-- 2. The shift: type only -->
+  <section class="s" id="shift"><div class="c">
+    <div class="sh">
+      <p class="eyebrow">The shift</p>
+      <h2>Every assistant so far<br> has waited to be asked.</h2>
+      <div class="copy">
+        <p class="lead">You ask, it answers, and then it forgets you until next time. That was never what a chief of staff did. A great one knows what you promised, notices what’s due, and brings you only the two things that truly need you.</p>
+      </div>
     </div>
+    <ul class="moments" aria-label="Three moments">
+      <li><span class="when">Tuesday.</span><span class="what">“I’ll send it over tonight.” Said in a meeting. Forgotten by Friday.</span></li>
+      <li><span class="when">Friday.</span><span class="what">The school form, due today, under forty newsletters.</span></li>
+      <li><span class="when">11:48 pm.</span><span class="what">Still answering, filing and chasing, instead of living.</span></li>
+    </ul>
   </div></section>
 
-  <section class="s" id="how"><div class="c">
-    <p class="eyebrow">How it works</p>
-    <h2>Three steps, and your first brief the same day.</h2>
-    <p class="lead">No questionnaires, no settings to fill in. Anthrie learns from what's already on your Mac.</p>
-    <div class="cards three">
-      <div class="card"><span class="n">1</span><h3>You choose what it reads</h3><p>Mail, Messages, calls, Calendar, Notes, the folders you pick — each with why it's read and what Anthrie never does with it.</p></div>
-      <div class="card"><span class="n">2</span><h3>It gets to know your life</h3><p>The circles of your life — work, family, money, travel — and who matters in each, from how you actually live.</p></div>
-      <div class="card"><span class="n">3</span><h3>It brings you only what needs you</h3><p>A short brief, answers to your questions, and records for the people you look after. The rest can wait.</p></div>
+  <!-- 3. On your Mac: the one real screen -->
+  <section class="s alt" id="product"><div class="c">
+    <div class="sh">
+      <p class="eyebrow">On your Mac</p>
+      <h2>Talk to it<br> like a person.</h2>
+      <div class="copy">
+        <p class="lead">Ask out loud, or type. It answers from your own mail, messages and files, in a sentence, and tells you where the answer came from. No forms, no settings, no dashboards to keep up with.</p>
+      </div>
     </div>
+    <figure class="design design-wide">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="img/design/b-mac-talk-dark.webp 2360w, img/design/b-mac-talk-dark-1320.webp 1320w" sizes="(min-width: 1320px) 1152px, 92vw">
+        <img src="img/design/b-mac-talk-light.webp" srcset="img/design/b-mac-talk-light.webp 2360w, img/design/b-mac-talk-light-1320.webp 1320w" sizes="(min-width: 1320px) 1152px, 92vw" width="1600" height="1060" loading="lazy" decoding="async" alt="A design: at his desk, Dev asks out loud what Rahul said about the pilot; a small panel from the Mac’s menu bar answers aloud in one sentence, the pilot can start on the fifth if he confirms today, and shows the mail and the agreement it came from.">
+      </picture>
+      <figcaption class="cap">A design · 9:28 am · Talk, from the menu bar. You look for three seconds, or not at all: the answer is also said aloud.</figcaption>
+    </figure>
+    <ul class="points4">
+      <li><h3>The morning talk.</h3><p>What needs you today, then the few questions only you can answer. Never the same one twice. Stop whenever you like.</p><span class="chip" data-status-of="morning"></span></li>
+      <li><h3>Only what needs you.</h3><p>Today holds at most three lines, each with why. Not a feed, not a count, not another inbox.</p><span class="chip" data-status-of="today"></span></li>
+      <li><h3>Your word wins.</h3><p>Tell it once, in a sentence: “remember, Rahul is my co-founder”. Nothing it reads can overrule you.</p><span class="chip" data-status-of="word"></span></li>
+      <li><h3>The people who matter.</h3><p>Learned from how you actually live, on your Mac: who you call, who you answer first. Not from your address book.</p><span class="chip" data-status-of="people"></span></li>
+    </ul>
   </div></section>
 
-  <section class="s alt" id="features"><div class="c">
-    <p class="eyebrow">What it does</p>
-    <h2>Like an executive assistant who knows you.</h2>
-      <div class="feature">
-        <div class="text"><p class="eyebrow">The brief</p><h3>What needs you, and nothing else.</h3><p>Grouped the way a good assistant would bring it to you.</p><ul><li><b>Quick ones</b> you can answer in a word</li><li><b>To read</b> when you're at your desk</li><li><b>For you alone</b> — opens with Touch ID</li></ul></div>
-        <div class="shot"><img src="img/02-brief-desk.png" alt="The morning brief" loading="lazy"></div>
-      </div>
-      <div class="feature flip">
-        <div class="text"><p class="eyebrow">Ask</p><h3>Ask it anything you know.</h3><p>“What did Rahul say about the pilot?” “When is Maya's vaccination?” Anthrie searches your mail, messages, notes and files on your Mac.</p><ul><li>Every answer shows where it came from</li><li>If nothing you have says, it tells you so</li></ul></div>
-        <div class="shot"><img src="img/09-ask-sourced-answer.png" alt="Ask, with an answer and its sources" loading="lazy"></div>
-      </div>
-      <div class="feature">
-        <div class="text"><p class="eyebrow">People you look after</p><h3>Your family's affairs, kept in one place.</h3><p>Your child's school, your partner's visa, your parents' insurance — gathered from what you already receive into a record for each of them.</p><ul><li>Health stays behind Touch ID</li><li>Tell it who you look after in a sentence</li></ul></div>
-        <div class="shot"><img src="img/10-maya-record.png" alt="A child's record: school, travel, documents" loading="lazy"></div>
-      </div>
-      <div class="feature flip">
-        <div class="text"><span class="tag">After early access</span><p class="eyebrow">One informed tap</p><h3>It prepares. You decide.</h3><p>Replies drafted in your voice, forms filled in, meetings prepared. Anything that commits you waits for one tap — and you always see who it goes to, what it says, why, and what happens next.</p><ul><li>Never sends, pays or signs on its own</li><li>Hand it more, one kind of task at a time</li></ul></div>
-        <div class="shot"><img src="img/05-ready-sheet.png" alt="A reply ready to send, with who, what, why and what happens" loading="lazy"></div>
-      </div>
+  <!-- 4. Mood: a mid-page field (mood-image slot) -->
+  <section class="slot slot-mood field-indigo" data-slot="mood-image"><div class="c">
+    <p class="field-line">Nothing that matters slips.<br> Nothing that doesn’t reaches you.</p>
   </div></section>
 
+  <!-- 5. A day: four moments, each with the seconds it asks of a screen -->
   <section class="s" id="day"><div class="c">
-    <p class="eyebrow">A day with Anthrie</p>
-    <h2>The right moment, on the right device.</h2>
-    <p class="lead">One founder's Thursday — probably a lot like yours.</p>
-    <div class="daygrid">
-      <ol class="timeline">
-        <li><div class="t">7:10<small>am · iPhone · Watch</small></div><div><b>Your brief is waiting</b><span>One calm notification, and a yes on your wrist for the reply someone has waited on since Tuesday.</span></div></li>
-        <li><div class="t">7:40<small>am · CarPlay · AirPods</small></div><div><b>The quick ones, spoken</b><span>Read aloud in the car. Anything to read, or anything personal, waits until you park.</span></div></li>
-        <li><div class="t">9:30<small>am · Mac</small></div><div><b>The contract, already read</b><span>Compared with the draft you agreed; the one change you hadn't seen, flagged.</span></div></li>
-        <li><div class="t">2:04<small>pm · iPhone</small></div><div><b>Family gets through</b><span>Your parents' flight is landing early — one reply. Everything else waits.</span></div></li>
-        <li><div class="t">4:10<small>pm · iPhone</small></div><div><b>Your child's records, in one place</b><span>School, clinic, travel and documents, gathered from what you already receive.</span></div></li>
-        <li><div class="t">9:20<small>pm · iPad</small></div><div><b>The day, wrapped up</b><span>What happened, what you promised for tomorrow, and the school form, filled in.</span></div></li>
-        <li><div class="t">11:40<small>pm · Mac</small></div><div><b>It keeps reading while you sleep</b><span>Tomorrow's brief is already taking shape. Nothing moved, nothing deleted.</span></div></li>
-      </ol>
-      <div class="pics">
-        <img class="wide" src="img/15-mac-desk-agreement.png" alt="9:30 am on Mac: the contract, already read" loading="lazy">
-        <img src="img/07-interruption-iphone.png" alt="2:04 pm on iPhone: family gets through" loading="lazy">
-        <img src="img/01-lock-screen.png" alt="7:10 am on iPhone: the brief" loading="lazy">
-        <img class="wide" src="img/17-ipad-evening-consent.png" alt="9:20 pm on iPad: the day wrapped up" loading="lazy">
+    <div class="sh">
+      <p class="eyebrow">A day with Anthrie</p>
+      <h2>One Thursday, handled.</h2>
+      <div class="copy">
+        <p class="lead">Four moments from a day, and how long each one asks you to look at a screen.</p>
       </div>
     </div>
+    <ol class="day4">
+      <li>
+        <p class="when">7:05 am · on a walk</p>
+        <p class="said">“Morning. The school form is due Friday. Who’s Arjun, to you?”</p>
+        <p class="look"><b>0 s</b><span>on a screen. A glance, if any.</span></p>
+        <figure class="design">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="img/design/a-morning-dark.webp">
+            <img src="img/design/a-morning-light.webp" width="1600" height="1120" loading="lazy" decoding="async" alt="A design: at 7:05 am on AirPods, Anthrie says the school form is due Friday and Priya is waiting on a go-ahead, then asks who Arjun is; Dev answers while walking, and the iPhone Lock Screen shows only that question.">
+          </picture>
+          <figcaption class="cap">A design · The morning talk, on AirPods and iPhone <span class="chip" data-status-of="devices"></span></figcaption>
+        </figure>
+      </li>
+      <li>
+        <p class="when">7:32 am · a glance</p>
+        <p class="said">Three lines at most, each with why. Some days, none.</p>
+        <p class="look"><b>3 s</b><span>on a screen.</span></p>
+        <!-- Today, set as type: a design, not a screenshot -->
+        <figure class="today" aria-label="A design for Today: three lines, each with why it needs you now">
+          <div class="today-top"><span>Today · Thursday</span><span>A design</span></div>
+          <ul>
+            <li><p class="line">Rahul needs your go-ahead on the pilot.</p><p class="why">He asked for an answer by today.</p></li>
+            <li><p class="line">The school form is due tomorrow.</p><p class="why">It needs your signature.</p></li>
+            <li><p class="line">Priya is still waiting on your reply.</p><p class="why">You meet her on Friday.</p></li>
+          </ul>
+          <figcaption class="today-foot">The rest waits until you ask.</figcaption>
+        </figure>
+        <p class="cap">A design · Today, on your Mac <span class="chip" data-status-of="today"></span></p>
+      </li>
+      <li>
+        <p class="when">10:41 am · in a meeting</p>
+        <p class="said">“Priya’s waiting on your go-ahead, and her call is at eleven. Send it?”</p>
+        <p class="look"><b>2 s</b><span>on a screen. One tap, five seconds to undo.</span></p>
+        <figure class="design">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="img/design/c-watch-dark.webp">
+            <img src="img/design/c-watch-light.webp" width="1600" height="1060" loading="lazy" decoding="async" alt="A design: an Apple Watch asks for a go-ahead to Priya before her call at eleven, with Send and Later; a second Watch shows it sent, with five seconds to undo.">
+          </picture>
+          <figcaption class="cap">A design · A reply ready for your yes, on Apple Watch <span class="chip" data-status-of="devices"></span></figcaption>
+        </figure>
+      </li>
+      <li>
+        <p class="when">11:40 pm · your Mac</p>
+        <p class="said">While your Mac is on, it keeps reading. Nothing moved, nothing deleted, nothing to look at.</p>
+        <p class="look"><b>0 s</b><span>on a screen.</span></p>
+        <div class="nothing" role="img" aria-label="Nothing to look at">Nothing to look at.</div>
+        <p class="cap">Reading your Mac, where things are <span class="chip" data-status-of="reads"></span></p>
+      </li>
+    </ol>
+    <p class="coda"><span>11:48 pm.</span> Nothing left to chase.</p>
   </div></section>
 
-  <section class="s alt" id="privacy"><div class="c">
-    <p class="eyebrow">Privacy</p>
-    <h2>Trusted like your lawyer. Private like your own mind.</h2>
-    <p class="lead">Anthrie is only useful if you can trust it with everything. So it's built to be trusted.</p>
-    <div class="cards four">
-      <div class="card"><h3>On your Mac</h3><p>It reads things where they are, and keeps what it learns on your Mac, encrypted with a key only your Mac holds.</p></div>
-      <div class="card"><h3>No one else</h3><p>No person reads your data — not even us. Never sold, never used for ads, never used to train AI.</p></div>
-      <div class="card"><h3>Your choice</h3><p>Switch any source off, see what each was used for, and erase everything in one click.</p></div>
-      <div class="card"><h3>Never on its own</h3><p>In early access it only reads. Later, anything that commits you waits for your tap.</p></div>
+  <!-- 6. The film (film slot) -->
+  <section class="slot slot-film field-night" data-slot="film" aria-label="A morning with Anthrie"><div class="c">
+    <!-- film slot: when the 60-second film exists, give this <video> its src and poster, a <track kind="captions">,
+         and remove hidden. It plays muted with captions and plays sound only when tapped. Then remove .field-line. -->
+    <video class="film" hidden controls muted playsinline preload="none"></video>
+    <p class="eyebrow">A morning with Anthrie</p>
+    <p class="field-line">You’ll hear it<br> more than you see it.</p>
+  </div></section>
+
+  <!-- 7. Trust, in words -->
+  <section class="s" id="trust"><div class="c">
+    <div class="sh">
+      <p class="eyebrow">Trust</p>
+      <h2>Trusted like your lawyer.<br> Loyal only to you.</h2>
     </div>
-    <p class="fine"><a href="trust.html">How Anthrie handles your data, in plain words →</a></p>
+    <ul class="claims">
+      <li><h3>It stays on your Mac.</h3><p>What it reads and learns is kept on your Mac, encrypted. In early access nothing leaves, and it hears you on your Mac alone.</p></li>
+      <li><h3>It works only for you.</h3><p>No ads. Never sold. Never used to train anyone’s AI. No person at Intellumia reads your life.</p></li>
+      <li><h3>The final word is yours.</h3><p>In early access it only reads: it never sends, pays, signs or deletes. Later, nothing that commits you happens without your yes, and money always asks.</p></li>
+    </ul>
+    <p class="more"><a class="go" href="trust.html">How Anthrie handles your data, and how it thinks, in plain words <span aria-hidden="true">→</span></a></p>
   </div></section>
 
-  <section class="s" id="apple"><div class="c">
-    <p class="eyebrow">Built for Apple</p>
-    <h2>Your Mac does the work. Your devices bring it to you.</h2>
-    <p class="lead">Anthrie is built only for Apple, on purpose: the Mac can read your mail, messages, calls and files in place — things no phone app is allowed to see.</p>
-    <div class="devices">
-      <div class="card"><img src="img/16-mac-night-menu-bar.png" alt="Mac" loading="lazy"><h3>Mac</h3><p>The engine. Reads and prepares, even while you sleep.</p></div>
-      <div class="card"><img src="img/02-brief-desk.png" alt="iPhone" loading="lazy"><h3>iPhone</h3><p>Your brief and your answers, in your pocket.</p></div>
-      <div class="card"><img src="img/08-watch-quick-one.png" alt="Apple Watch" loading="lazy"><h3>Apple Watch</h3><p>The quick ones, yes or no, on your wrist.</p></div>
-      <div class="card"><img src="img/17-ipad-evening-consent.png" alt="iPad" loading="lazy"><h3>iPad</h3><p>The day wrapped up, and forms signed with Pencil.</p></div>
+  <!-- 8. Early access, today: the one list of what is in early access and what is coming. Flip a label by moving
+       its <li> between the two lists; every chip on the page follows. -->
+  <section class="s alt" id="now"><div class="c">
+    <div class="sh">
+      <p class="eyebrow">Early access</p>
+      <h2>Start with your Mac.</h2>
+      <div class="copy">
+        <p class="lead">Early access is free, it only reads, and everything stays on your Mac. We’re inviting a few people at a time, and building the rest with them.</p>
+      </div>
     </div>
-    <p class="fine">Use Gmail or Outlook? Connect the account to your Mac once, and keep reading it wherever you like. iPhone, Watch and iPad arrive during early access.</p>
+    <div class="status-lists" id="status">
+      <div class="status-group now" data-status="now">
+        <h3>In early access</h3>
+        <ul>
+          <li data-feature="talk">Talk: ask by voice or by typing, with where each answer came from</li>
+          <li data-feature="morning">The morning talk</li>
+          <li data-feature="today">Today, at most three lines</li>
+          <li data-feature="word">Your word wins over anything it has read</li>
+          <li data-feature="people">The people who matter, learned on your Mac</li>
+          <li data-feature="reads">Reads mail, messages, calls, calendar, contacts and reminders where they are</li>
+          <li data-feature="trust">Trust: switch any source off, see what each was used for, erase everything</li>
+        </ul>
+      </div>
+      <div class="status-group soon" data-status="soon">
+        <h3>Coming soon</h3>
+        <ul>
+          <li data-feature="owe">What you owe, and what you’re owed</li>
+          <li data-feature="document">The right document, always the latest version</li>
+          <li data-feature="drafts">Drafts, ready for your yes</li>
+          <li data-feature="followups">Follow-ups from your office, with you copied</li>
+          <li data-feature="devices">iPhone, Apple Watch and iPad</li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">Needs a Mac with Apple silicon (M1 or later) on macOS 26. Each piece that’s coming arrives when it clears its bar; early access members hear first.</p>
+    <p class="act"><a class="btn" href="early-access.html#request">Request early access <span aria-hidden="true">↗</span></a></p>
   </div></section>
 
-  <section class="s alt"><div class="c founder">
-    <p class="eyebrow">Why we're building this</p>
-    <blockquote>“I run a company and a family, across two countries and too many inboxes. I didn't need another app. I needed someone who knew my life, kept my promises, and only interrupted me when it mattered. So we're building it — and it had to be something I'd trust with everything.”</blockquote>
-    <cite>Sundeep Kumar, founder, Intellumia</cite>
+  <!-- 9. Why we're building this (founder-portrait slot) -->
+  <section class="s"><div class="c founder">
+    <p class="eyebrow">Why we’re building this</p>
+    <!-- founder-portrait slot: his own photograph (docs/team/brand/founder/), cropped to a circle by CSS, no filters -->
+    <figure class="portrait"><img src="img/founder/sundeep-kumar-168.webp" srcset="img/founder/sundeep-kumar-168.webp 1x, img/founder/sundeep-kumar-336.webp 2x" width="168" height="168" loading="lazy" decoding="async" alt="Sundeep Kumar, founder of Intellumia, in a black and white portrait."></figure>
+    <blockquote>“I run a company and a family, across two countries and too many inboxes. I didn’t need another app. I needed someone who knew my life, kept my promises, and only interrupted me when it mattered. So we’re building it, and it had to be something I’d trust with everything.”</blockquote>
+    <cite class="fine">Sundeep Kumar, Founder &amp; AI Operating Partner, Intellumia</cite>
   </div></section>
 
-  <section class="s" id="faq"><div class="c">
-    <p class="eyebrow">Questions</p>
-    <h2>Before you ask.</h2>
+  <!-- 10. Questions -->
+  <section class="s alt" id="faq"><div class="c">
+    <div class="sh">
+      <p class="eyebrow">Questions</p>
+      <h2>Before you ask.</h2>
+    </div>
     <div class="faq">
-      <details><summary>Do I need a Mac?</summary><p>Yes. Early access runs on a Mac with Apple silicon (M1 or later) on macOS 26. iPhone, Apple Watch and iPad follow.</p></details>
-      <details><summary>I use Gmail or Outlook in a browser. Will it work?</summary><p>Yes. Add the account to your Mac once (System Settings › Internet Accounts) and keep reading it wherever you like. Your Mac keeps a copy Anthrie can read.</p></details>
-      <details><summary>Does my data leave my Mac?</summary><p>No. In early access everything stays on your Mac, encrypted. Anthrie uses Apple's on-device model; no server of ours sees your data.</p></details>
-      <details><summary>Will it send anything for me?</summary><p>Not in early access — it only reads. It never sends, pays, signs or deletes.</p></details>
-      <details><summary>What does it cost?</summary><p>Early access is free.</p></details>
+      <details><summary>Do I need a Mac?</summary><p>Yes. Early access runs on a Mac with Apple silicon (M1 or later) on macOS 26. The Mac is where Anthrie can read your mail, messages and calls in place, with your permission.</p></details>
+      <details><summary>Does my data leave my Mac?</summary><p>No. In early access everything stays on your Mac, encrypted, and it hears you on your Mac alone. No server of ours sees your data. <a href="trust.html">How it handles your data, in plain words</a>.</p></details>
+      <details><summary>Will it send anything for me?</summary><p>Not in early access: it only reads. It never sends, pays, signs or deletes. Drafts and follow-ups come later, one kind of task at a time and only with your say.</p></details>
     </div>
-    <p class="fine"><a href="early-access.html">All questions about early access →</a></p>
+    <p class="more"><a class="go" href="early-access.html#faq">All questions about early access <span aria-hidden="true">→</span></a></p>
   </div></section>
 
-  <section class="s alt cta"><div class="c">
-    <p class="eyebrow">Early access · for Mac</p>
-    <h2>Get your evenings back.</h2>
-    <p class="lead">We're inviting a few people at a time, and building Anthrie with every one of them.</p>
-    <a class="btn" href="early-access.html#request">Request early access</a>
+  <!-- 11. Close: the Indigo field (closing-image slot) -->
+  <section class="s close slot slot-close" data-slot="closing-image"><div class="c">
+    <p class="eyebrow">Early access · Mac</p>
+    <h2>Time is the one thing<br> you can’t make more of.</h2>
+    <p class="lead">Anthrie is built to give it back.</p>
+    <p class="act"><a class="btn" href="early-access.html#request">Request early access <span aria-hidden="true">↗</span></a></p>
   </div></section>
+  </main>
 
-  <footer>
-    <a href="trust.html">How Anthrie handles your data</a>
-    <a href="early-access.html">Early access</a>
-    <a href="privacy.html">Privacy policy</a>
-    <a href="terms.html">Terms of service</a>
-    <a href="mailto:hello@anthrie.com">hello@anthrie.com</a>
-    <p>Anthrie is made by <a href="https://intellumia.com">Intellumia</a>, Singapore.</p>
-  </footer>
+  <footer class="foot"><div class="c">
+    <div class="links">
+      <a href="trust.html">How Anthrie handles your data</a>
+      <a href="early-access.html">Early access</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of service</a>
+      <a href="mailto:hello@anthrie.com">hello@anthrie.com</a>
+    </div>
+    <div class="maker">
+      <a href="https://intellumia.com" aria-label="Intellumia"><img class="ink-light" src="img/brand/primary-black.svg" alt="Intellumia" width="140" height="38"><img class="ink-dark" src="img/brand/primary-white.svg" alt="Intellumia" width="140" height="38"></a>
+      <p class="fine">Anthrie is a product of Intellumia Pte. Ltd., Singapore.</p>
+    </div>
+    <p class="fine made">Imagery and film made with AI.</p>
+  </div></footer>
+  <script>
+    // Status labels: one list (#status) says what is in early access and what is coming; every chip follows it.
+    (function () {
+      var list = document.getElementById('status');
+      if (list) document.querySelectorAll('[data-status-of]').forEach(function (chip) {
+        var item = list.querySelector('[data-feature="' + chip.getAttribute('data-status-of') + '"]');
+        if (!item) return;
+        var now = item.closest('[data-status]').getAttribute('data-status') === 'now';
+        chip.textContent = now ? 'In early access' : 'Coming soon';
+        chip.classList.toggle('soon', !now);
+      });
+      // The hero's "Hear it": shown only once its recording is named in data-src.
+      var listen = document.querySelector('.listen');
+      if (listen && listen.getAttribute('data-src')) {
+        var audio = new Audio(listen.getAttribute('data-src'));
+        listen.hidden = false;
+        listen.addEventListener('click', function () { if (audio.paused) audio.play(); else audio.pause(); });
+      }
+    })();
+  </script>
 </body>
 </html>

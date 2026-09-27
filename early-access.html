@@ -3,79 +3,237 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Early access — Anthrie</title>
+  <title>Early access · Anthrie</title>
   <meta name="description" content="Anthrie early access: for Mac, read-only, free, and on your Mac alone.">
-  <meta property="og:title" content="Early access — Anthrie">
+  <meta property="og:title" content="Early access · Anthrie">
   <meta property="og:description" content="Anthrie early access: for Mac, read-only, free, and on your Mac alone.">
   <meta property="og:image" content="https://anthrie.com/img/og.png">
   <meta property="og:url" content="https://anthrie.com/early-access.html">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="icon" href="img/brand/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="img/brand/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/brand/apple-touch-icon-180.png">
+  <link rel="preload" href="fonts/Figtree-Latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css?v=11">
 </head>
 <body class="site">
   <header class="bar"><div class="c">
-    <a class="name" href="/">Anthrie</a>
-    <nav><a href="/#how">How it works</a><a href="/#features">What it does</a><a href="/#day">A day</a><a href="trust.html">Privacy</a><a href="early-access.html">Early access</a></nav>
+    <a class="name" href="/" aria-label="Anthrie, by Intellumia"><svg class="lockup" viewBox="0 0 494.02 129.6" aria-hidden="true" focusable="false"><path class="lockup-mark" d="M0 8.69 L33.75 8.69 L39.99 19.49 L89.61 19.49 L95.85 8.69 L129.6 8.69 L64.8 120.91ZM50.11 37.04 L64.8 62.45 L79.49 37.04Z"/><path fill="currentColor" d="M161.6 100.8 190.33 28.8H203.01L231.74 100.8H219.09L212.06 83.12H181.28L174.25 100.8ZM185.28 72.51H208.05L196.69 43.77ZM236.93 100.8V49.37H247.73L248.21 56.64Q250.74 52.51 254.69 50.33Q258.65 48.14 263.79 48.14Q269.88 48.14 274.26 50.6Q278.64 53.06 281 58.26Q283.36 63.46 283.3 71.79V100.8H271.82V74.47Q271.82 68.32 270.39 64.98Q268.96 61.64 266.44 60.29Q263.92 58.94 260.62 58.89Q254.78 58.81 251.59 62.72Q248.41 66.64 248.41 73.97V100.8ZM313.36 102.03Q305.2 102.03 300.92 97.95Q296.64 93.86 296.64 86.31V59.23H288.11V49.37H296.64V33.33H308.12V49.37H322V59.23H308.12V84.14Q308.12 87.72 309.83 89.57Q311.53 91.42 314.77 91.42Q315.83 91.42 317.03 91Q318.24 90.57 319.84 89.47L324 98.27Q321.4 100.09 318.71 101.06Q316.02 102.03 313.36 102.03ZM331.34 100.8V28.8H342.81V56.36Q345.39 52.34 349.29 50.24Q353.2 48.14 358.19 48.14Q364.29 48.14 368.67 50.6Q373.05 53.06 375.41 58.26Q377.76 63.46 377.71 71.79V100.8H366.23V74.47Q366.23 68.32 364.8 64.98Q363.37 61.64 360.85 60.29Q358.33 58.94 355.03 58.89Q349.19 58.81 346 62.72Q342.81 66.64 342.81 73.97V100.8ZM387.3 100.8V49.37H398.78V58.69Q401.9 53.85 406.81 51.51Q411.73 49.17 416.99 49.17V60.17Q412.33 60.17 408.16 61.46Q404 62.74 401.39 65.64Q398.78 68.53 398.78 73.28V100.8ZM423.26 100.8V49.37H434.74V100.8ZM429.06 39.63Q426.35 39.63 424.32 37.6Q422.29 35.57 422.29 32.86Q422.29 30.05 424.32 28.07Q426.35 26.09 429.06 26.09Q431.87 26.09 433.85 28.07Q435.83 30.05 435.83 32.86Q435.83 35.57 433.85 37.6Q431.87 39.63 429.06 39.63ZM469.2 102.03Q461.64 102.03 455.82 98.59Q450 95.14 446.69 89.07Q443.38 83.01 443.38 75.09Q443.38 67.17 446.75 61.1Q450.12 55.03 456.02 51.58Q461.92 48.14 469.57 48.14Q476.5 48.14 482.03 51.69Q487.57 55.23 490.8 61.9Q494.02 68.56 494.02 77.87H455.27Q455.78 84.32 460.06 88.03Q464.33 91.73 470.23 91.73Q474.94 91.73 478.04 89.61Q481.13 87.49 482.84 84.12L492.99 88.41Q490.89 92.59 487.53 95.66Q484.17 98.74 479.59 100.39Q475 102.03 469.2 102.03ZM455.96 69.04H481.59Q481.28 65.36 479.44 62.92Q477.61 60.49 474.92 59.24Q472.23 58 469.27 58Q466.41 58 463.47 59.21Q460.53 60.41 458.45 62.86Q456.37 65.31 455.96 69.04Z"/></svg><span class="by">by Intellumia</span></a>
+    <nav aria-label="Main"><a href="/#shift">The idea</a><a href="/#product">On your Mac</a><a href="/#day">A day</a><a href="trust.html">Trust</a><a href="early-access.html">Early access</a></nav>
     <a class="btn small" href="early-access.html#request">Request early access</a>
   </div></header>
-
-
 
   <section class="page-head"><div class="c prose">
     <p class="eyebrow">Early access · for Mac</p>
     <h1>Be one of the first to get your evenings back.</h1>
-    <p class="lead">We're inviting a small number of people to use Anthrie while we build it with them. It's free, it only reads, and everything stays on your Mac.</p>
-    <form class="request" id="request" autocomplete="on">
+    <p class="lead">Early access is the first piece of a chief of staff for every human. It's free, it only reads, and everything stays on your Mac. We're inviting a few people at a time, and building the rest with them.</p>
+    <form class="request quick" id="request" method="post" autocomplete="on" data-endpoint="https://waitlist-2qqtvw52hq-as.a.run.app">
       <div class="row2">
         <label>Your name<input name="name" required maxlength="120" autocomplete="name"></label>
         <label>Email<input name="email" type="email" required maxlength="254" autocomplete="email"></label>
       </div>
-      <div class="row2">
-        <label>Your Mac
-          <select name="mac" required>
-            <option value="">Choose…</option>
-            <option>MacBook Air (M1 or later)</option><option>MacBook Pro (M1 or later)</option><option>iMac (M1 or later)</option>
-            <option>Mac mini (M1 or later)</option><option>Mac Studio or Mac Pro (M1 or later)</option><option>An Intel Mac</option><option>No Mac yet</option>
-          </select></label>
-        <label>Where you read your mail
-          <select name="mail" required>
-            <option value="">Choose…</option>
-            <option>Apple Mail</option><option>Gmail in a browser</option><option>Outlook</option><option>Another app</option>
-          </select></label>
-      </div>
-      <fieldset><legend>You also use</legend>
-        <label class="check"><input type="checkbox" name="devices" value="iPhone"> iPhone</label>
-        <label class="check"><input type="checkbox" name="devices" value="Apple Watch"> Apple Watch</label>
-        <label class="check"><input type="checkbox" name="devices" value="iPad"> iPad</label>
+      <fieldset class="chips"><legend>Your Mac</legend>
+        <label class="pick"><input type="radio" name="mac" value="air" required><span>MacBook Air</span></label>
+        <label class="pick"><input type="radio" name="mac" value="pro"><span>MacBook Pro</span></label>
+        <label class="pick"><input type="radio" name="mac" value="imac"><span>iMac</span></label>
+        <label class="pick"><input type="radio" name="mac" value="mini"><span>Mac mini</span></label>
+        <label class="pick"><input type="radio" name="mac" value="studio"><span>Mac Studio or Pro</span></label>
+        <label class="pick"><input type="radio" name="mac" value="intel"><span>An Intel Mac</span></label>
+        <label class="pick"><input type="radio" name="mac" value="none"><span>No Mac yet</span></label>
       </fieldset>
-      <label>Why do you want Anthrie?
-        <span class="hint">What's slipping through the cracks or eating your time right now, and how would you want Anthrie to help? A real example from the last week helps us most.</span>
-        <textarea name="plate" rows="4" maxlength="1000" required placeholder="e.g. “I missed my daughter's school form deadline last week — it was buried under 200 emails. I'd want Anthrie to catch things like that and remind me in time.”"></textarea></label>
-      <label>Anything else you'd like us to know <span class="opt">(optional)</span><textarea name="note" rows="2" maxlength="1000"></textarea></label>
+      <fieldset class="chips"><legend>Where you read your mail</legend>
+        <label class="pick"><input type="radio" name="mail" value="apple" required><span>Apple Mail</span></label>
+        <label class="pick"><input type="radio" name="mail" value="gmail"><span>Gmail</span></label>
+        <label class="pick"><input type="radio" name="mail" value="outlook"><span>Outlook</span></label>
+        <label class="pick"><input type="radio" name="mail" value="other"><span>Something else</span></label>
+      </fieldset>
+      <p class="hint">The rest is optional. Tap whatever fits.</p>
+      <fieldset class="chips"><legend>What do you want from your AI?</legend>
+        <label class="pick"><input type="checkbox" name="want" value="promises"><span>Remember what I promised</span></label>
+        <label class="pick"><input type="checkbox" name="want" value="due"><span>Tell me what’s due, in time</span></label>
+        <label class="pick"><input type="checkbox" name="want" value="answers"><span>Answer questions about my life</span></label>
+        <label class="pick"><input type="checkbox" name="want" value="chase"><span>Chase people for me</span></label>
+      </fieldset>
+      <fieldset class="chips"><legend>What bothers you most?</legend>
+        <label class="pick"><input type="checkbox" name="bothers" value="volume"><span>Too many messages</span></label>
+        <label class="pick"><input type="checkbox" name="bothers" value="slipping"><span>Things slipping through</span></label>
+        <label class="pick"><input type="checkbox" name="bothers" value="paperwork"><span>Forms and paperwork</span></label>
+        <label class="pick"><input type="checkbox" name="bothers" value="finding"><span>Finding the right document</span></label>
+      </fieldset>
+      <fieldset class="chips"><legend>What took your time today?</legend>
+        <label class="pick"><input type="checkbox" name="wasted" value="email"><span>Email</span></label>
+        <label class="pick"><input type="checkbox" name="wasted" value="chats"><span>Chats</span></label>
+        <label class="pick"><input type="checkbox" name="wasted" value="meetings"><span>Meetings</span></label>
+        <label class="pick"><input type="checkbox" name="wasted" value="admin"><span>Admin and forms</span></label>
+      </fieldset>
+      <fieldset class="chips"><legend>What do you wish it did?</legend>
+        <label class="pick"><input type="checkbox" name="wish" value="followups"><span>Send my follow-ups</span></label>
+        <label class="pick"><input type="checkbox" name="wish" value="forms"><span>Fill in forms</span></label>
+        <label class="pick"><input type="checkbox" name="wish" value="iphone"><span>Work on my iPhone and Watch</span></label>
+        <label class="pick"><input type="checkbox" name="wish" value="bills"><span>Pay bills, with my OK</span></label>
+      </fieldset>
+      <fieldset class="chips pays"><legend>What do you pay for today, to automate or hand things off?</legend>
+        <label class="pick"><input type="checkbox" name="pays" value="nothing"><span>Nothing yet</span></label>
+        <details class="group"><summary><span class="t">AI assistants</span><span class="n"></span></summary><div class="opts">
+          <label class="pick"><input type="checkbox" name="pays_ai" value="chatgpt"><span>ChatGPT Plus or Pro</span></label>
+          <label class="pick"><input type="checkbox" name="pays_ai" value="claude"><span>Claude Pro or Max</span></label>
+          <label class="pick"><input type="checkbox" name="pays_ai" value="gemini"><span>Gemini</span></label>
+          <label class="pick"><input type="checkbox" name="pays_ai" value="perplexity"><span>Perplexity Pro</span></label>
+          <label class="pick"><input type="checkbox" name="pays_ai" value="copilot"><span>Microsoft Copilot</span></label>
+        </div></details>
+        <details class="group"><summary><span class="t">Meeting notes</span><span class="n"></span></summary><div class="opts">
+          <label class="pick"><input type="checkbox" name="pays_meetings" value="otter"><span>Otter</span></label>
+          <label class="pick"><input type="checkbox" name="pays_meetings" value="fireflies"><span>Fireflies</span></label>
+          <label class="pick"><input type="checkbox" name="pays_meetings" value="granola"><span>Granola</span></label>
+          <label class="pick"><input type="checkbox" name="pays_meetings" value="fathom"><span>Fathom</span></label>
+          <label class="pick"><input type="checkbox" name="pays_meetings" value="readai"><span>Read.ai</span></label>
+          <label class="pick"><input type="checkbox" name="pays_meetings" value="zoom_teams"><span>Zoom AI or Teams Premium</span></label>
+        </div></details>
+        <details class="group"><summary><span class="t">Email</span><span class="n"></span></summary><div class="opts">
+          <label class="pick"><input type="checkbox" name="pays_email" value="superhuman"><span>Superhuman</span></label>
+          <label class="pick"><input type="checkbox" name="pays_email" value="shortwave"><span>Shortwave</span></label>
+          <label class="pick"><input type="checkbox" name="pays_email" value="sanebox"><span>SaneBox</span></label>
+          <label class="pick"><input type="checkbox" name="pays_email" value="spark"><span>Spark</span></label>
+          <label class="pick"><input type="checkbox" name="pays_email" value="workspace_ai"><span>Gmail or Workspace AI</span></label>
+        </div></details>
+        <details class="group"><summary><span class="t">Calendar and scheduling</span><span class="n"></span></summary><div class="opts">
+          <label class="pick"><input type="checkbox" name="pays_calendar" value="calendly"><span>Calendly</span></label>
+          <label class="pick"><input type="checkbox" name="pays_calendar" value="calcom"><span>Cal.com</span></label>
+          <label class="pick"><input type="checkbox" name="pays_calendar" value="reclaim"><span>Reclaim</span></label>
+          <label class="pick"><input type="checkbox" name="pays_calendar" value="motion"><span>Motion</span></label>
+          <label class="pick"><input type="checkbox" name="pays_calendar" value="clockwise"><span>Clockwise</span></label>
+        </div></details>
+        <details class="group"><summary><span class="t">To-dos and planning</span><span class="n"></span></summary><div class="opts">
+          <label class="pick"><input type="checkbox" name="pays_todo" value="todoist"><span>Todoist</span></label>
+          <label class="pick"><input type="checkbox" name="pays_todo" value="things"><span>Things</span></label>
+          <label class="pick"><input type="checkbox" name="pays_todo" value="ticktick"><span>TickTick</span></label>
+          <label class="pick"><input type="checkbox" name="pays_todo" value="sunsama"><span>Sunsama</span></label>
+          <label class="pick"><input type="checkbox" name="pays_todo" value="notion"><span>Notion</span></label>
+        </div></details>
+        <details class="group"><summary><span class="t">People</span><span class="n"></span></summary><div class="opts">
+          <label class="pick"><input type="checkbox" name="pays_people" value="ea_pa"><span>A human EA or PA</span></label>
+          <label class="pick"><input type="checkbox" name="pays_people" value="va"><span>A virtual assistant</span></label>
+          <label class="pick"><input type="checkbox" name="pays_people" value="family_staff"><span>Family or staff who help</span></label>
+        </div></details>
+      </fieldset>
+      <fieldset class="chips" id="spend"><legend>About how much, a month? <span class="opt">In US dollars; roughly the same in your currency is fine.</span></legend>
+        <label class="pick"><input type="radio" name="spend" value="lt20"><span>Under $20</span></label>
+        <label class="pick"><input type="radio" name="spend" value="20to50"><span>$20–50</span></label>
+        <label class="pick"><input type="radio" name="spend" value="50to100"><span>$50–100</span></label>
+        <label class="pick"><input type="radio" name="spend" value="100to300"><span>$100–300</span></label>
+        <label class="pick"><input type="radio" name="spend" value="300plus"><span>$300 or more</span></label>
+      </fieldset>
+      <div class="say-or-write">
+        <label for="words">Anything else, in your words <span class="opt">(optional)</span></label>
+        <textarea id="words" name="words" rows="3" maxlength="1000" placeholder="The one thing you'd hand over tomorrow, if you could."></textarea>
+        <!-- Speak instead: recorded in this browser, at most a minute, played back, and sent only with the box ticked. -->
+        <div class="voice" hidden>
+          <button type="button" class="rec"><span class="rdot" aria-hidden="true"></span><span class="rec-label">Or say it</span></button>
+          <span class="timer" aria-live="polite"></span>
+          <audio class="playback" controls hidden></audio>
+          <button type="button" class="discard go" hidden>Remove it</button>
+          <label class="consent" hidden><input type="checkbox" name="voice_consent" value="yes"> Send my voice note too. Anthrie's team listens to it only to read your request. It is kept privately in Singapore and deleted when you ask, or at the latest 12 months after early access ends.</label>
+        </div>
+      </div>
       <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
-      <button class="btn" type="submit">Request early access</button>
-      <p class="fine">We keep only what you type here, to invite you — nothing else, and no tracking. See our <a href="privacy.html">privacy policy</a>.</p>
+      <button class="btn" type="submit">Request early access <span aria-hidden="true">↗</span></button>
+      <p class="fine">We keep only what you give us here, and when, to invite you. No cookies, no tracking. See our <a href="privacy.html">privacy policy</a>.</p>
       <p class="status" role="status" aria-live="polite"></p>
+      <noscript><p class="fine">This form needs JavaScript. Or write to us at the address below.</p></noscript>
     </form>
-    <p class="fine">Rather write? <a href="mailto:hello@anthrie.com?subject=Early%20access%20to%20Anthrie&body=Hi%2C%0A%0AI%27d%20like%20early%20access%20to%20Anthrie.%0A%0A1.%20My%20Mac%20%28model%20and%20year%2C%20e.g.%20MacBook%20Air%20M2%2C%202023%29%3A%0A2.%20Where%20I%20read%20my%20mail%20%28Apple%20Mail%2C%20Gmail%20in%20a%20browser%2C%20Outlook%2C%20...%29%3A%0A3.%20I%20also%20use%20%28iPhone%20/%20Apple%20Watch%20/%20iPad%29%3A%0A%0AThanks%2C%0A">hello@anthrie.com</a> — tell us which Mac you have and where you read your mail.</p>
+    <p class="fine">Rather write? <a href="mailto:hello@anthrie.com?subject=Early%20access%20to%20Anthrie&body=Hi%2C%0A%0AI%27d%20like%20early%20access%20to%20Anthrie.%0A%0A1.%20My%20Mac%3A%0A2.%20Where%20I%20read%20my%20mail%3A%0A%0AThanks%2C%0A">hello@anthrie.com</a>. Tell us which Mac you have and where you read your mail.</p>
     <script>
       (function () {
         var form = document.getElementById('request');
         var status = form.querySelector('.status');
+
+        // What they pay for: "Nothing yet" is one tap and clears the rest; each group shows how many are ticked;
+        // "About how much, a month?" appears once anything is ticked.
+        var spend = document.getElementById('spend');
+        var nothing = form.querySelector('input[name="pays"][value="nothing"]');
+        var paid = form.querySelectorAll('.pays .group input');
+        function syncPays() {
+          var any = false;
+          form.querySelectorAll('.pays .group').forEach(function (g) {
+            var n = g.querySelectorAll('input:checked').length;
+            g.querySelector('.n').textContent = n ? String(n) : '';
+            if (n) any = true;
+          });
+          spend.hidden = !any;
+          if (!any) spend.querySelectorAll('input').forEach(function (i) { i.checked = false; });
+        }
+        nothing.addEventListener('change', function () {
+          if (nothing.checked) {
+            paid.forEach(function (b) { b.checked = false; });
+            form.querySelectorAll('.pays .group').forEach(function (g) { g.open = false; });
+          }
+          syncPays();
+        });
+        paid.forEach(function (b) { b.addEventListener('change', function () { if (b.checked) nothing.checked = false; syncPays(); }); });
+        syncPays();
+
+        // Speak instead of writing: MediaRecorder, a minute at most, played back before it is sent.
+        var voice = form.querySelector('.voice'), note = null, seconds = 0;
+        var TYPES = ['audio/webm;codecs=opus', 'audio/mp4', 'audio/ogg;codecs=opus', 'audio/webm'];
+        var type = window.MediaRecorder && navigator.mediaDevices && navigator.mediaDevices.getUserMedia
+          ? TYPES.filter(function (t) { return MediaRecorder.isTypeSupported(t); })[0] : null;
+        if (type) {
+          voice.hidden = false;
+          var rec = voice.querySelector('.rec'), label = voice.querySelector('.rec-label'), timer = voice.querySelector('.timer');
+          var playback = voice.querySelector('.playback'), discard = voice.querySelector('.discard'), consent = voice.querySelector('.consent');
+          var recorder = null, started = 0, tick = null, stopAt = null;
+          function clock(s) { s = Math.min(60, Math.floor(s)); return '0:' + (s < 10 ? '0' : '') + s + ' of 1:00'; }
+          function reset() {
+            note = null; seconds = 0; playback.hidden = true; playback.removeAttribute('src'); discard.hidden = true;
+            consent.hidden = true; consent.querySelector('input').checked = false; timer.textContent = ''; label.textContent = 'Or say it';
+          }
+          rec.addEventListener('click', function () {
+            if (recorder && recorder.state === 'recording') { recorder.stop(); return; }
+            reset();
+            navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+              var chunks = [];
+              recorder = new MediaRecorder(stream, { mimeType: type, audioBitsPerSecond: 48000 });
+              recorder.ondataavailable = function (e) { if (e.data.size) chunks.push(e.data); };
+              recorder.onstop = function () {
+                clearInterval(tick); clearTimeout(stopAt);
+                stream.getTracks().forEach(function (t) { t.stop(); });
+                seconds = Math.min(60, (Date.now() - started) / 1000);
+                note = new Blob(chunks, { type: type.split(';')[0] });
+                playback.src = URL.createObjectURL(note); playback.hidden = false;
+                discard.hidden = false; consent.hidden = false;
+                label.textContent = 'Record again'; rec.classList.remove('on');
+                timer.textContent = 'Play it back, then tick the box to send it.';
+              };
+              recorder.start(1000); started = Date.now(); rec.classList.add('on'); label.textContent = 'Stop';
+              timer.textContent = clock(0);
+              tick = setInterval(function () { timer.textContent = clock((Date.now() - started) / 1000); }, 250);
+              stopAt = setTimeout(function () { if (recorder.state === 'recording') recorder.stop(); }, 60000);
+            }).catch(function () { timer.textContent = 'The microphone isn’t available. You can write instead.'; });
+          });
+          discard.addEventListener('click', reset);
+        }
+
         form.addEventListener('submit', function (e) {
           e.preventDefault();
-          var f = new FormData(form);
-          var body = { name: f.get('name'), email: f.get('email'), mac: f.get('mac'), mail: f.get('mail'),
-                       devices: f.getAll('devices').join(', '), plate: f.get('plate'), note: f.get('note'), website: f.get('website') };
-          var button = form.querySelector('button');
+          if (!form.reportValidity()) return;
+          var data = new FormData(form);
+          data.delete('voice_consent');
+          if (note) {
+            if (!form.querySelector('input[name="voice_consent"]').checked) {
+              status.textContent = 'To send your voice note, tick the box under it, or remove it.'; return;
+            }
+            var ext = note.type.indexOf('mp4') >= 0 ? 'mp4' : (note.type.indexOf('ogg') >= 0 ? 'ogg' : 'webm');
+            data.append('voice', note, 'voice.' + ext);
+            data.append('voice_seconds', seconds.toFixed(1));
+            data.append('voice_consent', 'yes');
+          }
+          var button = form.querySelector('button[type="submit"]');
+          var email = String(data.get('email') || '').replace(/[<>&"]/g, '');
           button.disabled = true; status.textContent = 'Sending…';
-          fetch('https://waitlist-2qqtvw52hq-as.a.run.app', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+          fetch(form.getAttribute('data-endpoint'), { method: 'POST', body: data })
             .then(function (r) { return r.json().then(function (j) { return { ok: r.ok && j.ok, j: j }; }); })
             .then(function (res) {
-              if (res.ok) { form.innerHTML = '<h3>Thank you — you’re on the list.</h3><p class="lead">We invite a few people at a time and read every request. We’ll write to you at ' + body.email.replace(/</g, '') + '.</p>'; }
+              if (res.ok) { form.innerHTML = '<h3>Thank you. You’re on the list.</h3><p class="lead">We invite a few people at a time and read every request. We’ll write to you at ' + email + '.</p>'; }
               else { button.disabled = false; status.textContent = (res.j && res.j.error) || 'That didn’t go through. Please try again, or write to hello@anthrie.com.'; }
             })
             .catch(function () { button.disabled = false; status.textContent = 'That didn’t go through. Please try again, or write to hello@anthrie.com.'; });
@@ -84,26 +242,95 @@
     </script>
   </div></section>
 
-  <section class="s alt"><div class="c faq">
-    <h2>Questions</h2>
-    <details><summary>Do I need a Mac?</summary><p>Yes. In early access Anthrie runs on a Mac with Apple silicon (M1 or later) on macOS 26. The Mac is where it can read your mail, messages, calls, notes and files in place — things no phone app is allowed to see. iPhone, Apple Watch and iPad follow.</p></details>
-    <details><summary>What will it read?</summary><p>Only what you choose: Mail, Messages, calls from your iPhone, Calendar, Contacts, Reminders, Notes, WhatsApp's notifications, and the folders you pick. It shows you each one, why, and what it will never do with it, before asking for anything.</p></details>
-    <details><summary>I use Gmail or Outlook in a browser. Will it work?</summary><p>Yes. Connect the account to your Mac once (System Settings › Internet Accounts) with Mail, Calendars and Contacts on, and keep reading it wherever you like. Your Mac keeps a copy that Anthrie can read; Anthrie keeps Mail syncing quietly in the background.</p></details>
-    <details><summary>Does it send anything on my behalf?</summary><p>Not in early access: it only reads. It never sends, pays, signs, books or deletes. Acting on your behalf comes later, one kind of task at a time, and only with your tap.</p></details>
-    <details><summary>Does my data leave my Mac?</summary><p>No. In early access everything Anthrie reads and learns stays on your Mac, encrypted. It uses Apple's on-device model; no cloud model or server of ours sees your data.</p></details>
-    <details><summary>How long does it take to get going?</summary><p>About ten minutes to set up. The first time, Anthrie reads your history — usually 20 to 40 minutes on a Mac with years of mail — and tells you as it goes. Your first brief appears when it's done.</p></details>
-    <details><summary>What does it cost?</summary><p>Early access is free. We'll tell you about pricing well before it changes, and you can always erase everything and leave.</p></details>
-    <details><summary>What can't it see?</summary><p>Apps outside your Mac's own — like Notion, or WhatsApp on your phone alone. It tells you plainly what it can and can't see.</p></details>
-    <details><summary>How do I leave?</summary><p>Erase everything from inside the app, then drag it to the Bin. Your own mail, messages and files are never touched.</p></details>
+  <section class="s alt" id="how"><div class="c">
+    <div class="head"><p class="eyebrow">How it works</p><div>
+      <h2>One window, one switch, then nothing to do.</h2>
+      <p class="lead">No questionnaires, no settings to fill in. You open Anthrie and click Begin. It opens the one switch macOS asks for, and then it reads what's already on your Mac, the last month first, while you get on with your evening.</p>
+    </div></div>
+    <ol class="journey">
+      <li>
+        <div class="txt"><h3>Welcome</h3><p>One window: what it reads, three promises, and one button. The reasons and switches wait behind one link.</p></div>
+        <figure class="design"><picture><source media="(prefers-color-scheme: dark)" srcset="img/design/i-welcome-dark.webp"><img src="img/design/i-welcome-light.webp" width="1600" height="1060" loading="lazy" decoding="async" alt="A design: on the Mac, a single welcome window greets Dev by name, shows the sources Anthrie reads with a link to what and why, three promises (it only reads, it stays on this Mac, erase any time) and one Begin button."></picture><figcaption class="cap">A design · Welcome</figcaption></figure>
+      </li>
+      <li>
+        <div class="txt"><h3>The one switch</h3><p>macOS's own switch, opened at the exact place, with one line of why beside it. Anthrie notices the moment it's on. Then three quick yeses from macOS: your people, your days, your reminders.</p></div>
+        <figure class="design"><picture><source media="(prefers-color-scheme: dark)" srcset="img/design/j-one-switch-dark.webp"><img src="img/design/j-one-switch-light.webp" width="1600" height="1060" loading="lazy" decoding="async" alt="A design: System Settings is open at Full Disk Access with Anthrie highlighted in the list; beside it an Anthrie helper says switch on Anthrie, one switch lets me read your mail, messages and calls, and I'll notice the moment it's on."></picture><figcaption class="cap">A design · The one switch</figcaption></figure>
+      </li>
+      <li>
+        <div class="txt"><h3>Reading, nothing to do</h3><p>No counts, no progress bar. It reads the last month first, then who matters, then further back. Close the window whenever you like.</p></div>
+        <figure class="design"><picture><source media="(prefers-color-scheme: dark)" srcset="img/design/k-reading-dark.webp"><img src="img/design/k-reading-light.webp" width="1600" height="1060" loading="lazy" decoding="async" alt="A design: a quiet window with a breathing dot says I'm reading, nothing needs you, close this whenever you like; beneath, the words this month, who matters, further back, and tomorrow morning I'll have a few things only you can tell me."></picture><figcaption class="cap">A design · Reading</figcaption></figure>
+      </li>
+      <li>
+        <div class="txt"><h3>The first morning</h3><p>The first time it speaks: one thing that matters, with where it came from, then only what you alone know. Say skip any time.</p></div>
+        <figure class="design"><picture><source media="(prefers-color-scheme: dark)" srcset="img/design/l-first-morning-dark.webp"><img src="img/design/l-first-morning-light.webp" width="1600" height="1060" loading="lazy" decoding="async" alt="A design: in the morning on the Mac with AirPods, a menu bar panel asks who Arjun is, with the answer appearing as Dev speaks; the offer, Morning Dev, ready when you are, sits above it."></picture><figcaption class="cap">A design · The first morning</figcaption></figure>
+      </li>
+      <li>
+        <div class="txt"><h3>If something breaks</h3><p>Silent until it matters, then one sentence and one switch. It catches up and answers without being asked again.</p></div>
+        <figure class="design"><picture><source media="(prefers-color-scheme: dark)" srcset="img/design/m-recovery-dark.webp"><img src="img/design/m-recovery-light.webp" width="1600" height="1060" loading="lazy" decoding="async" alt="A design: asked what Rahul sent, Anthrie says a Mac update switched off its access to mail on Sunday and offers the one switch; a minute later it answers on its own that Rahul sent the signed pilot agreement at eight."></picture><figcaption class="cap">A design · When something breaks</figcaption></figure>
+      </li>
+    </ol>
   </div></section>
 
-  <footer>
-    <a href="trust.html">How Anthrie handles your data</a>
-    <a href="early-access.html">Early access</a>
-    <a href="privacy.html">Privacy policy</a>
-    <a href="terms.html">Terms of service</a>
-    <a href="mailto:hello@anthrie.com">hello@anthrie.com</a>
-    <p>Anthrie is made by <a href="https://intellumia.com">Intellumia</a>, Singapore.</p>
-  </footer>
+  <!-- The one list of what is in early access and what is coming. Flip a label by moving its <li>. -->
+  <section class="s" id="includes"><div class="c">
+    <div class="head"><p class="eyebrow">What early access includes</p><div>
+      <h2>The first piece, on your Mac.</h2>
+      <p class="lead">It reads, understands and talks with you. The rest arrives one piece at a time, each when it clears its bar, and you'll hear about each one first.</p>
+    </div></div>
+    <div class="status-lists" id="status">
+      <div class="status-group now" data-status="now">
+        <h3>In early access</h3>
+        <ul>
+          <li data-feature="talk">Talk: ask by voice or by typing, with where each answer came from</li>
+          <li data-feature="morning">The morning talk</li>
+          <li data-feature="today">Today, at most three lines</li>
+          <li data-feature="word">Your word wins over anything it has read</li>
+          <li data-feature="people">The people who matter, learned on your Mac</li>
+          <li data-feature="reads">Reads mail, messages, calls, calendar, contacts and reminders where they are</li>
+          <li data-feature="trust">Trust: switch any source off, see what each was used for, erase everything</li>
+        </ul>
+      </div>
+      <div class="status-group soon" data-status="soon">
+        <h3>Coming soon</h3>
+        <ul>
+          <li data-feature="owe">What you owe, and what you’re owed</li>
+          <li data-feature="document">The right document, always the latest version</li>
+          <li data-feature="drafts">Drafts, ready for your yes</li>
+          <li data-feature="followups">Follow-ups from your office, with you copied</li>
+          <li data-feature="devices">iPhone, Apple Watch and iPad</li>
+        </ul>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="s alt" id="faq"><div class="c">
+    <div class="head"><p class="eyebrow">Questions</p><div><h2>Before you ask.</h2></div></div>
+    <div class="faq">
+    <details><summary>Do I need a Mac?</summary><p>Yes. In early access Anthrie runs on a Mac with Apple silicon (M1 or later) on macOS 26. The Mac is where it can read your mail, messages and calls in place, things no phone app is allowed to see. iPhone, Apple Watch and iPad come later.</p></details>
+    <details><summary>What will it read?</summary><p>Only what you choose: Mail and the documents attached to it, Messages, calls from your iPhone, Calendar, Contacts, Reminders, the titles of your Notes, WhatsApp's notifications, and the names of files in your folders. It shows you each one, why, and what it will never do with it.</p></details>
+    <details><summary>I use Gmail or Outlook in a browser. Will it work?</summary><p>Yes. Connect the account to your Mac once (System Settings › Internet Accounts) with Mail, Calendars and Contacts on, and keep reading it wherever you like. Your Mac keeps a copy that Anthrie can read.</p></details>
+    <details><summary>Does it send anything on my behalf?</summary><p>Not in early access: it only reads. It never sends, pays, signs, books or deletes. Drafts and follow-ups from your office come later: one kind of task at a time, and only with your say.</p></details>
+    <details><summary>Does my data leave my Mac?</summary><p>No. In early access everything Anthrie reads and learns stays on your Mac, encrypted, and it hears you on your Mac alone. No server of ours sees your data. The details are <a href="trust.html">here, in plain words</a>.</p></details>
+    <details><summary>What does setting up involve?</summary><p>You open Anthrie and click Begin. It opens the one switch macOS asks for, and macOS asks three quick yeses for your contacts, calendars and reminders. Then there's nothing to do: it reads what's recent first, and further back while your Mac is on.</p></details>
+    <details><summary>What does “coming soon” mean?</summary><p>That we're building it and it isn't in the app yet. We don't give dates we can't keep: each piece arrives when it clears its bar, and early access members hear about it first.</p></details>
+    <details><summary>What does it cost?</summary><p>Early access is free. We'll tell you about pricing well before it changes, and you can always erase everything and leave.</p></details>
+    <details><summary>How do I leave?</summary><p>Erase everything from inside the app, then drag it to the Bin. Your own mail, messages and files are never touched.</p></details>
+    </div>
+  </div></section>
+
+  <footer class="foot"><div class="c">
+    <div class="links">
+      <a href="trust.html">How Anthrie handles your data</a>
+      <a href="early-access.html">Early access</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of service</a>
+      <a href="mailto:hello@anthrie.com">hello@anthrie.com</a>
+    </div>
+    <div class="maker">
+      <a href="https://intellumia.com" aria-label="Intellumia"><img class="ink-light" src="img/brand/primary-black.svg" alt="Intellumia" width="140" height="38"><img class="ink-dark" src="img/brand/primary-white.svg" alt="Intellumia" width="140" height="38"></a>
+      <p class="fine">Anthrie is a product of Intellumia Pte. Ltd., Singapore.</p>
+    </div>
+    <p class="fine made">Imagery and film made with AI.</p>
+  </div></footer>
 </body>
 </html>
