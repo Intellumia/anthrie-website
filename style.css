@@ -73,6 +73,11 @@ figure { margin: 0; }
 a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1.5px; transition: color var(--ease); }
 a:hover { color: var(--accent-press); }
 :focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 3px; border-radius: 8px; }
+/* "Skip to content": the first stop for the keyboard, out of sight until it has focus */
+.skip { position: absolute; left: 12px; top: -80px; z-index: 30; padding: 10px 18px; border-radius: 999px;
+  background: var(--accent); color: var(--on-accent); font-size: 15px; font-weight: 600; text-decoration: none; }
+.skip:focus, .skip:focus-visible { top: 12px; color: var(--on-accent); }
+main:focus { outline: none; }
 b, strong { font-weight: 650; }
 p { margin: 0 0 0.9rem; }
 ul { padding-left: 1.2rem; }
@@ -278,6 +283,10 @@ section.s .prose > h2:first-child { margin-top: 0; }
 .request button { justify-self: start; }
 .request button:disabled { opacity: 0.6; cursor: default; }
 .request .status { margin: 0; }
+/* the 18+ tick and the notice at the point of collection, just above the button */
+.request label.check.age { align-items: flex-start; font-size: 16px; font-weight: 500; }
+.request label.check.age input { flex: none; margin-top: 2px; }
+.request .notice { margin: 0; font-size: 14px; max-width: 44rem; }
 
 /* ---------- the hero's spoken exchange: lines arrive one by one; the dot breathes while it listens ---------- */
 .exchange { margin: clamp(48px, 6vw, 88px) 0 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 16px clamp(18px, 2.4vw, 32px);

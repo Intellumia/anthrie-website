@@ -1,0 +1,7 @@
+# Security contact for anthrie.com and Anthrie, by Intellumia Pte. Ltd. (RFC 9116).
+# Please write to us before disclosing a problem publicly. We acknowledge within 7 days.
+Contact: mailto:privacy@anthrie.com
+Contact: mailto:hello@anthrie.com
+Expires: 2027-09-27T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://anthrie.com/.well-known/security.txt
