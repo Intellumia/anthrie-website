@@ -14,7 +14,7 @@
   <link rel="icon" href="img/brand/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/brand/apple-touch-icon-180.png">
   <link rel="preload" href="fonts/Figtree-Latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="stylesheet" href="style.css?v=12">
 </head>
 <body class="site home">
   <header class="bar"><div class="c">
@@ -167,9 +167,12 @@
   <section class="slot slot-film field-night" data-slot="film" aria-label="A morning with Anthrie"><div class="c">
     <!-- film slot: when the 60-second film exists, give this <video> its src and poster, a <track kind="captions">,
          and remove hidden. It plays muted with captions and plays sound only when tapped. Then remove .field-line. -->
-    <video class="film" hidden controls muted playsinline preload="none"></video>
     <p class="eyebrow">A morning with Anthrie</p>
-    <p class="field-line">You’ll hear it<br> more than you see it.</p>
+    <video class="film" controls muted playsinline preload="metadata" poster="film/a-morning-poster.webp"
+           aria-label="A morning with Anthrie: a 60-second film, made with AI">
+      <source src="film/a-morning.mp4" type="video/mp4">
+      <track kind="captions" src="film/a-morning.vtt" srclang="en" label="English" default>
+    </video>
   </div></section>
 
   <!-- 7. Trust, in words -->
